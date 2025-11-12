@@ -23,6 +23,7 @@ public class UserDefinedFunctionClassHandler {
         else if (type == double.class) return Double.parseDouble(args.get(index));
         else if (type == char.class) return args.get(index).charAt(0);
         else if (type == BigNumber.class) return BigNumber.of(args.get(index));
+        else if (type == String.class) return String.valueOf(args.get(index));
         else return null;
     }
 
@@ -90,4 +91,5 @@ public class UserDefinedFunctionClassHandler {
         }
     }
 }
+
 
