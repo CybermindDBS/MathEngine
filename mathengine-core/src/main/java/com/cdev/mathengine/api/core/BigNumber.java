@@ -32,6 +32,10 @@ public class BigNumber implements Comparable {
         defaultMathContext = mathContext;
     }
 
+    public static void setDefaultMathContext(Integer precision) {
+        defaultMathContext = new MathContext(precision);
+    }
+
     public static void removeDefaultMathContext() {
         defaultMathContext = null;
     }
@@ -180,6 +184,11 @@ public class BigNumber implements Comparable {
 
     public BigNumber setMathContext(MathContext mathContext) {
         this.commonMathContext = mathContext;
+        return this;
+    }
+
+    public BigNumber setMathContext(Integer precision) {
+        this.commonMathContext = new MathContext(precision);
         return this;
     }
 
