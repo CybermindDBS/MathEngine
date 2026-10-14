@@ -15,7 +15,7 @@ on:
 env:
   AWS_REGION: ap-south-1
   ECS_CLUSTER: mathengine
-  ECS_SERVICE: mathengine-core-svc
+  ECS_SERVICE: mathengine-td-service-og87pm4t
   CONTAINER_NAME: mathengine-core
   TASK_DEFINITION: mathengine-core/.aws/task-definition.json
   IMAGE: ghcr.io/cyberminddbs/mathengine-core
